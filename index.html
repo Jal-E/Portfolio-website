@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 </head>
+
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
 <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
@@ -35,23 +37,30 @@
     <div class="container">
         <div class="row intro-text align-items-center justify-content-center">
             <div class="col-md-10 text-center pt-5">
-                <h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Anjali Rai</strong></h1>
-                <strong class="d-block text-white text-uppercase letter-spacing">Welcome to My Portfolio</strong>
+                <h1 class="site-heading site-animate">Hi, I'm <strong class="d-block">Anjali Rai</strong></h1>
+                <strong class="d-block text-white text-uppercase letter-spacing">
+                    Data Analyst | SQL • Python • Excel • Reporting
+                </strong>
+                <p class="text-white mt-3">
+                    I turn messy data into clear insights for institutional, operational, and business decision-making.
+                </p>
             </div>
         </div>
     </div>
-</section> <!-- section -->
+</section>
 
-    <section class="site-section" id="section-portfolio">
+<section class="site-section" id="section-portfolio">
     <div class="container">
         <div class="row">
             <div class="section-heading text-center col-md-12">
                 <h2>Featured <strong>Projects</strong></h2>
             </div>
         </div>
+
         <div class="filters">
             <ul>
                 <li class="active" data-filter="*">All</li>
+                <li data-filter=".analytics">Data Analytics</li>
                 <li data-filter=".academic">Academic</li>
                 <li data-filter=".research">Research</li>
             </ul>
@@ -60,43 +69,43 @@
         <div class="filters-content">
             <div class="row grid">
 
-                <!-- AI Mini Problems -->
-                <div class="single-portfolio col-sm-4 all academic">
+                <!-- University Reporting Audit Project -->
+                <div class="single-portfolio col-sm-4 all analytics">
                     <div class="relative">
                         <div class="thumb">
                             <div class="overlay overlay-bg"></div>
-                            <img class="image img-fluid" src="images/ai_mini_problems.jpg" alt="AI Mini Problems">
+                            <img class="image img-fluid" src="images/reporting_audit.jpg" alt="University Reporting Audit Project">
                         </div>
-                        <a href="https://github.com/Jal-E/AI-Mini-Problems" target="_blank">
+                        <a href="https://github.com/Jal-E" target="_blank">
                             <div class="middle">
                                 <div class="text align-self-center d-flex">View Project</div>
                             </div>
                         </a>
                     </div>
                     <div class="p-inner">
-                        <h4>AI Mini Problems</h4>
-                        <p>Classic AI problems solved with algorithms, including 4-in-a-Line, 8-Puzzle Solver, and N-Queen solutions.</p>
-                        <div class="cat">Academic</div>
+                        <h4>University Reporting Audit Project</h4>
+                        <p>Built a mock institutional reporting audit workflow to check missing values, duplicates, inconsistent records, and reporting accuracy using SQL, Python, and Excel-style validation.</p>
+                        <div class="cat">Data Analytics</div>
                     </div>
                 </div>
 
-                <!-- Autonomous Vehicle -->
-                <div class="single-portfolio col-sm-4 all research">
+                <!-- Supply Chain Inventory Analysis -->
+                <div class="single-portfolio col-sm-4 all analytics">
                     <div class="relative">
                         <div class="thumb">
                             <div class="overlay overlay-bg"></div>
-                            <img class="image img-fluid" src="images/autonomous_vehicle.jpg" alt="Autonomous Vehicle">
+                            <img class="image img-fluid" src="images/supply_chain.jpg" alt="Supply Chain Inventory Analysis">
                         </div>
-                        <a href="https://github.com/Jal-E/Autonomous-Vehicle" target="_blank">
+                        <a href="https://github.com/Jal-E" target="_blank">
                             <div class="middle">
                                 <div class="text align-self-center d-flex">View Project</div>
                             </div>
                         </a>
                     </div>
                     <div class="p-inner">
-                        <h4>Autonomous Vehicle</h4>
-                        <p>Developed road segmentation algorithms with Python and ROS2 for autonomous vehicle perception.</p>
-                        <div class="cat">Research</div>
+                        <h4>Supply Chain Inventory Analysis</h4>
+                        <p>Analyzed inventory, vendor, and materials data to identify duplicate items, stock risks, and opportunities for reporting improvement.</p>
+                        <div class="cat">Data Analytics</div>
                     </div>
                 </div>
 
@@ -115,7 +124,7 @@
                     </div>
                     <div class="p-inner">
                         <h4>Viral Cascade Prediction</h4>
-                        <p>Predicting the virality of malicious threads in anonymous forums within the darknet with the help of advanced social network analysis and machine learning techniques. The goal is to identify early indicators of viral cascades, enabling proactive mitigation of harmful content.</p>
+                        <p>Developed machine learning models to predict viral cascades in malicious dark web forum threads using PostgreSQL, graph-based features, and classification techniques.</p>
                         <div class="cat">Research</div>
                     </div>
                 </div>
@@ -135,7 +144,47 @@
                     </div>
                     <div class="p-inner">
                         <h4>Obesity Classification</h4>
-                        <p>Implemented ML models to predict obesity levels based on key health and lifestyle features.</p>
+                        <p>Implemented machine learning models to classify obesity levels using health and lifestyle data, with a focus on preprocessing, model comparison, and prediction accuracy.</p>
+                        <div class="cat">Academic</div>
+                    </div>
+                </div>
+
+                <!-- Autonomous Vehicle -->
+                <div class="single-portfolio col-sm-4 all research">
+                    <div class="relative">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="images/autonomous_vehicle.jpg" alt="Autonomous Vehicle">
+                        </div>
+                        <a href="https://github.com/Jal-E/Autonomous-Vehicle" target="_blank">
+                            <div class="middle">
+                                <div class="text align-self-center d-flex">View Project</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-inner">
+                        <h4>Autonomous Vehicle</h4>
+                        <p>Worked on road segmentation and perception research using Python, ROS2, and deep learning models for autonomous vehicle applications.</p>
+                        <div class="cat">Research</div>
+                    </div>
+                </div>
+
+                <!-- AI Mini Problems -->
+                <div class="single-portfolio col-sm-4 all academic">
+                    <div class="relative">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="images/ai_mini_problems.jpg" alt="AI Mini Problems">
+                        </div>
+                        <a href="https://github.com/Jal-E/AI-Mini-Problems" target="_blank">
+                            <div class="middle">
+                                <div class="text align-self-center d-flex">View Project</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-inner">
+                        <h4>AI Mini Problems</h4>
+                        <p>Solved classic AI problems including 4-in-a-Line, 8-Puzzle Solver, and N-Queens using search algorithms and problem-solving techniques.</p>
                         <div class="cat">Academic</div>
                     </div>
                 </div>
@@ -155,7 +204,7 @@
                     </div>
                     <div class="p-inner">
                         <h4>KnowItAll App</h4>
-                        <p>Ingredient scanning app for making informed dietary, religious, and health-conscious choices.</p>
+                        <p>Built an ingredient scanning app to support dietary, religious, and health-conscious choices through text processing and application development.</p>
                         <div class="cat">Academic</div>
                     </div>
                 </div>
@@ -175,36 +224,36 @@
                     </div>
                     <div class="p-inner">
                         <h4>Software Engineering Projects</h4>
-                        <p>Collection of projects demonstrating software development skills, design patterns, and methodologies.</p>
+                        <p>Collection of projects demonstrating software development, application design, and implementation of programming concepts.</p>
                         <div class="cat">Academic</div>
                     </div>
                 </div>
+
                 <!-- Facial Expression Recognition -->
-                <div class="single-portfolio col-sm-4 all academic">
+                <div class="single-portfolio col-sm-4 all research">
                     <div class="relative">
                         <div class="thumb">
                             <div class="overlay overlay-bg"></div>
                             <img class="image img-fluid" src="images/facial_recognition.jpg" alt="Facial Expression Recognition">
-                    </div>
-                    <a href="https://colab.research.google.com/drive/18pHhUchLH8nSfvUyymV-b_fVNdHxAKi1?usp=sharing" target="_blank">
-                        <div class="middle">
-                            <div class="text align-self-center d-flex">View Project</div>
                         </div>
-                    </a>
+                        <a href="https://colab.research.google.com/drive/18pHhUchLH8nSfvUyymV-b_fVNdHxAKi1?usp=sharing" target="_blank">
+                            <div class="middle">
+                                <div class="text align-self-center d-flex">View Project</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-inner">
+                        <h4>Facial Expression Recognition</h4>
+                        <p>Built CNN-based deep learning models to classify facial expressions using spatial feature extraction, data augmentation, and PyTorch model training.</p>
+                        <div class="cat">Research</div>
+                    </div>
                 </div>
-                <div class="p-inner">
-                    <h4>Facial Expression Recognition</h4>
-                    <p>Built deep learning models using CNNs to classify facial expressions. Techniques include spatial feature extraction, data augmentation, and model training in PyTorch.</p>
-                <div class="cat">Research</div>
-                </div>
-            </div>
+
             </div>
         </div>
     </div>
 </section>
 
-
-<!-- skills -->
 <section class="site-section pb-0" id="section-skills">
     <div class="container">
         <div class="row mb-4">
@@ -214,174 +263,167 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <!-- Programming Languages -->
+
             <div class="col-md-6 col-lg-4 text-center mb-5">
                 <div class="site-service-item site-animate" data-animate-effect="fadeIn">
-                    <span class="icon" style="color: #b8d8ba;"> <!-- Light green icon color -->
+                    <span class="icon" style="color: #b8d8ba;">
                         <span class="icon-code"></span>
                     </span>
-                    <h3 class="mb-4">Programming Languages</h3>
-                    <ul style="list-style: none; padding: 0; color: #d1d1d1;"> <!-- Light grey text -->
+                    <h3 class="mb-4">Analytics Languages</h3>
+                    <ul style="list-style: none; padding: 0; color: #d1d1d1;">
+                        <li style="margin: 10px 0;">SQL</li>
                         <li style="margin: 10px 0;">Python</li>
-                        <li style="margin: 10px 0;">Rust</li>
+                        <li style="margin: 10px 0;">JavaScript</li>
                         <li style="margin: 10px 0;">C++</li>
                         <li style="margin: 10px 0;">Java</li>
-                        <li style="margin: 10px 0;">JavaScript</li>
-                        <li style="margin: 10px 0;">SQL</li> <!-- Added -->
                     </ul>
                 </div>
             </div>
 
-            <!-- Tools & Frameworks -->
             <div class="col-md-6 col-lg-4 text-center mb-5">
                 <div class="site-service-item site-animate" data-animate-effect="fadeIn">
-                    <span class="icon" style="color: #b8d8ba;"> <!-- Light green icon color -->
+                    <span class="icon" style="color: #b8d8ba;">
                         <span class="icon-drive"></span>
                     </span>
-                    <h3 class="mb-4">Tools & Frameworks</h3>
-                    <ul style="list-style: none; padding: 0; color: #d1d1d1;"> <!-- Light grey text -->
-                        <li style="margin: 10px 0;">TensorFlow</li>
-                        <li style="margin: 10px 0;">PyTorch</li>
-                        <li style="margin: 10px 0;">FastAPI</li> <!-- Added -->
-                        <li style="margin: 10px 0;">ROS2</li>
-                        <li style="margin: 10px 0;">Kubernetes</li>
-                        <li style="margin: 10px 0;">FAISS</li> <!-- Added -->
-                        <li style="margin: 10px 0;">SQLAlchemy</li> <!-- Added -->
+                    <h3 class="mb-4">Tools & Platforms</h3>
+                    <ul style="list-style: none; padding: 0; color: #d1d1d1;">
+                        <li style="margin: 10px 0;">Excel</li>
+                        <li style="margin: 10px 0;">Power BI</li>
+                        <li style="margin: 10px 0;">Tableau</li>
+                        <li style="margin: 10px 0;">PostgreSQL</li>
+                        <li style="margin: 10px 0;">Jupyter Notebook</li>
+                        <li style="margin: 10px 0;">Git/GitHub</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Development Tools -->
             <div class="col-md-6 col-lg-4 text-center mb-5">
                 <div class="site-service-item site-animate" data-animate-effect="fadeIn">
-                    <span class="icon" style="color: #b8d8ba;"> <!-- Light green icon color -->
+                    <span class="icon" style="color: #b8d8ba;">
                         <span class="icon-layers"></span>
                     </span>
-                    <h3 class="mb-4">Development Tools</h3>
-                    <ul style="list-style: none; padding: 0; color: #d1d1d1;"> <!-- Light grey text -->
-                        <li style="margin: 10px 0;">Linux</li>
-                        <li style="margin: 10px 0;">Git</li>
-                        <li style="margin: 10px 0;">Docker</li>
-                        <li style="margin: 10px 0;">PostgreSQL</li>
-                        <li style="margin: 10px 0;">Agile Development</li>
-                        <li style="margin: 10px 0;">Jira</li> <!-- Moved to Development Tools -->
+                    <h3 class="mb-4">Data Skills</h3>
+                    <ul style="list-style: none; padding: 0; color: #d1d1d1;">
+                        <li style="margin: 10px 0;">Data Cleaning</li>
+                        <li style="margin: 10px 0;">Reporting QA</li>
+                        <li style="margin: 10px 0;">Dashboarding</li>
+                        <li style="margin: 10px 0;">Data Visualization</li>
+                        <li style="margin: 10px 0;">Statistical Analysis</li>
+                        <li style="margin: 10px 0;">Stakeholder Communication</li>
                     </ul>
                 </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="site-section" id="section-resume">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <div class="section-heading text-center">
+                    <h2>My <strong>Resume</strong></h2>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="mb-5">Education</h2>
+
+                <div class="resume-item mb-4">
+                    <span class="date"><span class="icon-calendar"></span> Aug 2023 - May 2025</span>
+                    <h3>Master of Science in Computer Science</h3>
+                    <span class="school">California State Polytechnic University Pomona</span>
+                </div>
+
+                <div class="resume-item mb-4">
+                    <span class="date"><span class="icon-calendar"></span> July 2014 - June 2018</span>
+                    <h3>Bachelor of Technology in Computer Science & Engineering</h3>
+                    <span class="school">Sikkim Manipal Institute of Technology</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="mb-5">Experience</h2>
+
+                <div class="resume-item mb-4">
+                    <span class="date"><span class="icon-calendar"></span> January 2025 - Present</span>
+                    <h3>Generalist Intern</h3>
+                    <ul>
+                        <li><strong>Backend Development:</strong> Worked on RESTful APIs and database schemas for user and project management.</li>
+                        <li><strong>RAG Pipeline:</strong> Supported retrieval-augmented generation workflows for document search and query answering.</li>
+                        <li><strong>Agile Practices:</strong> Participated in sprint planning, daily standups, and retrospectives to support project goals.</li>
+                        <li><strong>Collaboration:</strong> Coordinated with team members to integrate backend functionality with project requirements.</li>
+                    </ul>
+                    <span class="school">Quantum Pulse Consulting</span>
+                </div>
+
+                <div class="resume-item mb-4">
+                    <span class="date"><span class="icon-calendar"></span> May 2024 - December 2024</span>
+                    <h3>Research Assistant (Part-Time)</h3>
+                    <ul>
+                        <li><strong>Road Segmentation:</strong> Worked on semantic segmentation using FCN and UNet architectures.</li>
+                        <li><strong>Behavioral Learning:</strong> Supported end-to-end learning for driving commands.</li>
+                        <li><strong>Technical Tools:</strong> Used Python, Linux, and ROS2 for robotics and autonomous vehicle research.</li>
+                    </ul>
+                    <span class="school">Autonomous Vehicle Lab, California State Polytechnic University Pomona</span>
+                </div>
+
+                <div class="resume-item mb-4">
+                    <span class="date"><span class="icon-calendar"></span> February 2019 - May 2023</span>
+                    <h3>Business Administrator</h3>
+                    <ul>
+                        <li><strong>Inventory Management:</strong> Supported stock monitoring, purchasing decisions, and inventory control processes.</li>
+                        <li><strong>Business Operations:</strong> Assisted with administrative workflows, vendor coordination, and operational tracking.</li>
+                        <li><strong>Process Improvement:</strong> Identified opportunities to improve organization, reporting, and business efficiency.</li>
+                    </ul>
+                    <span class="school">Jay Hari Shiv Ganga Engineering</span>
+                </div>
+
+                <div class="resume-item mb-4">
+                    <span class="date"><span class="icon-calendar"></span> January 2018 - June 2018</span>
+                    <h3>Software Development Intern</h3>
+                    <ul>
+                        <li><strong>Scripting:</strong> Converted test scripts from Tcl to Python for automation.</li>
+                        <li><strong>Test Automation:</strong> Reduced manual effort and human error through regression testing automation.</li>
+                        <li><strong>Python Automation:</strong> Used Python libraries to support scalable test automation workflows.</li>
+                    </ul>
+                    <span class="school">Keysight Technologies</span>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
-
-
-
-
-
-	
-	<section class="site-section " id="section-resume">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2>My <strong>Resume</strong></h2>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="mb-5">Education</h2>
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> Aug 2023 - May 2025</span>
-						<h3>Masters in Computer Science</h3>
-						<span class="school">California State Polytechnic University Pomona</span>
-					</div>
-
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> July 2014 - June 2018</span>
-						<h3>Bachelors of Technology in Computer Science & Engineering</h3>
-						<span class="school">Sikkim Manipal Institute of Technology</span>
-					</div>
-
-				</div>
-				<div class="col-md-6">
-
-
-					<h2 class="mb-5">Experience</h2>
-
-                    <div class="resume-item mb-4">
-                        <span class="date"><span class="icon-calendar"></span> January 2025 - Present</span>
-                        <h3>Intern</h3>
-                        <ul>
-                            <li><strong>Backend Development:</strong> Working on RESTful APIs and database schemas for user and project management.</li>
-                            <li><strong>RAG Pipeline:</strong> Developing retrieval-augmented generation workflows for document search and query answering.</li>
-                            <li><strong>Agile Practices:</strong> Actively participating in sprint planning, daily standups, and retrospectives to support project goals.</li>
-                            <li><strong>Collaboration:</strong> Coordinating with teams to integrate backend functionalities with project requirements.</li>
-                            <li><strong>Project Demonstration:</strong> Preparing to present progress and deliverables during bi-weekly reviews to stakeholders.</li>
-                        </ul>
-                        <span class="school">Quantum Pulse Consulting</span>
-                    </div>
-
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> May 2024 - December 2024</span>
-						<h3>Research Assistant(part-time)</h3>
-						<ul>
-                            <li><strong>Road Segmentation:</strong> Semantic segmentation using FCN and UNet architectures.</li>
-                            <li><strong>Behavioral Learning:</strong> End-to-end learning for driving commands.</li>
-                            <li><strong>Linux:</strong> Used for robotics development with ROS2.</li>
-                        </ul>
-						<span class="school">Autonomous Vehicle Lab, California State Polytechnic University Pomona</span>
-					</div>
-
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> Febuary 2019 - May 2023</span>
-						<h3>Business Administrator</h3>
-						<ul>
-                            <li><strong>Inventory Management:</strong> Applied EOQ and JIT systems to optimize stock levels.</li>
-                            <li><strong>Strategic Advertising:</strong> Identified target audiences for effective campaigns.</li>
-                        </ul>
-						<span class="school">Jay Hari Shiv Ganga Engineering</span>
-					</div>
-
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> January 2018 - June 2018</span>
-						<h3>Software Development Intern</h3>
-						<ul>
-                            <li><strong>Scripting:</strong> Converted test scripts from Tcl to Python for automation.</li>
-                            <li><strong>Test Automation:</strong> Reduced human error and time with regression testing.</li>
-                            <li><strong> Python automation: </strong> Leveraged Python’s robust libraries for scalable test automation.
-                            </li>
-                        </ul>
-						<span class="school">Keysight Technologies</span>
-					</div>
-
-					
-
-
-				</div>
-			</div>
-		</div>
-	</section> <!-- .section -->
-
 <section class="site-section" id="section-about">
     <div class="container">
         <div class="row mb-5 align-items-center">
             <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-                <img src="images/image__1.jpg" alt="Image placeholder" class="img-fluid">
+                <img src="images/image__1.jpg" alt="Anjali Rai" class="img-fluid">
             </div>
+
             <div class="col-lg-5 pl-lg-5">
                 <div class="section-heading">
                     <h2>About <strong>Me</strong></h2>
                 </div>
-                <p class="lead">Hi there! I’m Anjali Rai, a curious soul on a mission to merge technology with creativity. Currently, I’m a Generalist Intern at <a href="https://qpulse.tech/" target="_blank">Quantum Pulse Consulting</a>, where I contribute to cutting-edge digital transformation initiatives using Agile methodologies and technical solutions.</p>
-                <p class="meta">🐾 Dog Lover: If there’s a dog in the room, I’m already best friends with it. My ultimate dream is to create a world where street dogs have homes and belly rubs galore.<br>
-                🧵 Aspiring Seamstress: Currently learning to sew so I can one day build a whole wardrobe by myself. The goal? Sustainable fashion, unique style, and the ability to say, “Thanks, I made it!” to every compliment. <br>
-                🤖 AI Enthusiast: I genuinely believe in the revolution AI will bring—making room for humanity to finally exhale, create, and explore the ART we’ve neglected in the rat race. (“We desperately need a new world philosopher!”)</p>
-                <p class="mb-lg-0">✨ Fun Facts: <br>
-                - I’ve studied for the UPSC exam in India, which means I can write essays on nearly any topic and have a unique perspective on life.<br>
-                - I’m obsessed with blending technology and social good, whether it’s using AI for disaster management or helping street dogs.<br>
-                - I can binge-learn a topic in record time—be it machine learning, cooking, or… sewing.<br> <br>
-                I’m here to create, inspire, and leave the world a little better than I found it. Let’s build something amazing together! <br> <br> </p>
-                <p>
-                    <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+
+                <p class="lead">
+                    I’m Anjali Rai, a data-focused professional based in Fayetteville, Arkansas, with a Master’s in Computer Science and a background in finance, research, and business operations.
+                </p>
+
+                <p class="meta">
+                    My work focuses on cleaning messy data, building reliable reporting workflows, analyzing trends, and translating technical findings into practical recommendations. I enjoy working with SQL, Python, Excel, PostgreSQL, and visualization tools to support better decision-making.
+                </p>
+
+                <p class="mb-lg-0">
+                    I’m especially interested in institutional analytics, supply chain analytics, public-sector data, and operational reporting. My background combines technical problem-solving with business experience, which helps me understand both the data and the decisions behind it.
+                </p>
+
+                <p class="mt-4">
+                    <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Contact Me</a>
                     <a href="rezume-master/Anjali_Rai_CV.pdf" class="btn btn-secondary px-4 py-2 btn-sm" download>Download CV</a>
                 </p>
             </div>
@@ -389,200 +431,103 @@
     </div>
 </section>
 
+<section class="site-section" id="section-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <div class="section-heading text-center">
+                    <h2>Get <strong>In Touch</strong></h2>
+                </div>
+            </div>
 
-	<!-- <section class="site-section pb-0"  id="section-services">
-		<div class="container">
-
-			<div class="row mb-4">
-				<div class="col-md-12">
-					<div class="section-heading text-center">
-						<h2>My <strong>Services</strong></h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-
-				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-browser2"></span>
-						</span>
-						<h3 class="mb-4">Web Design</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-presentation"></span>
-						</span>
-						<h3 class="mb-4">Search Engine Optimization</h3>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-video2"></span>
-						</span>
-						<h3 class="mb-4">Video Editing</h3>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-					</div>
-				</div>
-
-				
-
-			</div>
-		</div>
-	</section>
--->
-	<section class="site-section" id="section-contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2>Get <strong>In Touch</strong></h2>
-					</div>
-				</div>
-
-				<div class="col-md-7 mb-5 mb-md-0">
+            <div class="col-md-7 mb-5 mb-md-0">
                 <form action="https://formspree.io/f/myzyqvaz" method="POST" class="site-form">
                     <h3 class="mb-5">Get In Touch</h3>
+
                     <div class="form-group">
-                        <input 
-                            type="text" 
-                            class="form-control px-3 py-4" 
-                            style="color: #fff;" 
-                            placeholder="Your Name" 
-                            name="name" 
-                            required
-                        >
+                        <input type="text" class="form-control px-3 py-4" style="color: #fff;" placeholder="Your Name" name="name" required>
                     </div>
+
                     <div class="form-group">
-                        <input 
-                            type="email" 
-                            class="form-control px-3 py-4" 
-                            style="color: #fff;" 
-                            placeholder="Your Email" 
-                            name="email" 
-                            required
-                        >
+                        <input type="email" class="form-control px-3 py-4" style="color: #fff;" placeholder="Your Email" name="email" required>
                     </div>
+
                     <div class="form-group mb-5">
-                        <textarea 
-                            class="form-control px-3 py-4" 
-                            style="color: #fff;" 
-                            cols="30" 
-                            rows="10" 
-                            placeholder="Write a Message" 
-                            name="message" 
-                            required
-                        ></textarea>
+                        <textarea class="form-control px-3 py-4" style="color: #fff;" cols="30" rows="10" placeholder="Write a Message" name="message" required></textarea>
                     </div>
+
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary px-4 py-3">Send Message</button>
                     </div>
                 </form>
-				</div>
-				<div class="col-md-5 pl-md-5">
-					<h3 class="mb-5">My Contact Details</h3>
-					<ul class="site-contact-details">
-						<li>
-							<span class="text-uppercase">Email</span>
-							jalraibhardwaj@gmail.com
-						</li>
-						<li>
-							<span class="text-uppercase">Phone</span>
-							+1 (840)777-8703
-						</li>
-					
-						<li>
-							<span class="text-uppercase">Address</span>
-							Fayetteville, AR <br>
-							40 West Village Lake Dr  <br>
-							
-						</li>
-						<li>
-            				<span class="text-uppercase">
-            					<a href="https://www.linkedin.com/in/anjalirai0706/" target="_blank">LinkedIn</span></a>
-            				
-        				</li>
-       				 	<li>
-            				<span class="text-uppercase">
-            					<a href="https://github.com/jal-e" target="_blank">GitHub</span></a>
-            				
-        				</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
 
+            <div class="col-md-5 pl-md-5">
+                <h3 class="mb-5">My Contact Details</h3>
+                <ul class="site-contact-details">
+                    <li>
+                        <span class="text-uppercase">Email</span>
+                        jalraibhardwaj@gmail.com
+                    </li>
 
-	<footer class="site-footer" id="section-footer">
-		<div class="container">
+                    <li>
+                        <span class="text-uppercase">Location</span>
+                        Fayetteville, AR
+                    </li>
 
-			<div class="row mb-5">
-				<p class="col-12 text-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</p>
-			</div>
-			
-			<div class="row mb-5">
-    <div class="col-md-12 text-center">
-        <p>
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/profile.php?id=100089530539818" target="_blank" class="social-item">
-                <span class="icon-facebook2"></span>
-            </a>
-            
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/neon_jali/?next=%2F" target="_blank" class="social-item">
-                <span class="icon-instagram2"></span>
-            </a>
-            
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/anjali-rai-b697729a" target="_blank" class="social-item">
-                <span class="icon-linkedin2"></span>
-            </a>
-            
-            <!-- GitHub -->
-            <a href="https://github.com/jal-e" target="_blank" class="social-item">
-                <span class="icon-github"></span>
-            </a>
-        </p>
+                    <li>
+                        <span class="text-uppercase">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/anjalirai0706/" target="_blank">linkedin.com/in/anjalirai0706</a>
+                    </li>
+
+                    <li>
+                        <span class="text-uppercase">GitHub</span>
+                        <a href="https://github.com/jal-e" target="_blank">github.com/jal-e</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-			
-		</div>
-	</footer>
+<footer class="site-footer" id="section-footer">
+    <div class="container">
 
+        <div class="row mb-5">
+            <p class="col-12 text-center">
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i>
+                by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+            </p>
+        </div>
 
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <p>
+                    <a href="https://www.linkedin.com/in/anjalirai0706/" target="_blank" class="social-item">
+                        <span class="icon-linkedin2"></span>
+                    </a>
 
+                    <a href="https://github.com/jal-e" target="_blank" class="social-item">
+                        <span class="icon-github"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
 
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/vendor/popper.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
+    </div>
+</footer>
 
-	<script src="js/vendor/jquery.easing.1.3.js"></script>
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/jquery.easing.1.3.js"></script>
+<script src="js/vendor/jquery.stellar.min.js"></script>
+<script src="js/vendor/jquery.waypoints.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="js/custom.js"></script>
 
-	<script src="js/vendor/jquery.stellar.min.js"></script>
-	<script src="js/vendor/jquery.waypoints.min.js"></script>
-
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="js/custom.js"></script>
-
-	<!-- Google Map -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    	<script src="js/google-map.js"></script> -->
-
-    </body>
-    </html>
+</body>
+</html>
